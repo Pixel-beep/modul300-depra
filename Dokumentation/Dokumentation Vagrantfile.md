@@ -13,11 +13,13 @@ Es ist wichtig zu verstehen, dass innerhalb eines einzigen Konfigurationsabschni
   Hier wird spezifiziert welche VM Box verwendet werden soll.
 #
   `config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true`
- Hier wird der Port festgelegt über der die Virtuelle Maschine erreichbar ist. In diesem Fall hier wäre das der Port 8080.
- Die Option Auto Correct überprüft ob der gesetzte Port mit einem bereits verwendeten Port kollidiert. Wenn ja, wird der Host-Port automatisch geändert. 
+
+Hier wird der Port festgelegt über der die Virtuelle Maschine erreichbar ist. In diesem Fall hier wäre das der Port 8080.
+
+Die Option Auto Correct überprüft ob der gesetzte Port mit einem bereits verwendeten Port kollidiert. Wenn ja, wird der Host-Port automatisch geändert. 
  Standardmässig ist diese Option auf "false" gesetzt.
 #
- ` config.vm.synced_folder ".", "/var/www/html"`
+ `config.vm.synced_folder ".", "/var/www/html"`
   beispieltext
   #
 `config.vm.provider "virtualbox" do |vb|
@@ -36,8 +38,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OT
-U2NDk4NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQy
-LDE0MDQyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NT
-A3MTU5MjJdfQ==
+eyJoaXN0b3J5IjpbLTEyMzU1ODc1ODIsLTY0MDM2MTE4NiwtMT
+A4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2MjIwLDEyNTA0MzYy
+OTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLTE2NDkxMjkxNjQsLT
+k5MTYzMzg0LC03NTA3MTU5MjJdfQ==
 -->
