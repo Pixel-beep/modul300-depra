@@ -41,11 +41,11 @@ Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner z
 
 *- `mount_options`  Eine Liste zusätzlicher Einhängeoptionen, die an den Einhängebefehl übergeben werden.*
 
-*- ``owner (string) - Der Benutzer, der der Eigentümer dieses synchronisierten Ordners sein sollte. Standardmäßig wird dies der SSH-Benutzer sein. Einige synchronisierte Ordnertypen unterstützen die Änderung des Eigentümers nicht.*
+*- `owner` Der Benutzer, der der Eigentümer dieses synchronisierten Ordners sein sollte. Standardmäßig wird dies der SSH-Benutzer sein. Einige synchronisierte Ordnertypen unterstützen die Änderung des Eigentümers nicht.*
 
-*- type (string) - Der Typ des synchronisierten Ordners. Wenn dies nicht angegeben wird, wählt Vagrant automatisch die beste synchronisierte Ordneroption für Ihre Umgebung. Andernfalls können Sie einen bestimmten Typ wie "nfs" angeben.*
+*- `type`  Der Typ des synchronisierten Ordners. Wenn dies nicht angegeben wird, wählt Vagrant automatisch die beste synchronisierte Ordneroption für Ihre Umgebung. Andernfalls können Sie einen bestimmten Typ wie "nfs" angeben.*
 
-*- id (string) - Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn Sie das Mount auf dem Gastsystem ausführen.*
+*- `id` Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn Sie das Mount auf dem Gastsystem ausführen.*
 
 Synchronisierte Ordner werden automatisch während des Vagabundierens und des Vagabundierens des Neuladens eingerichtet.
 Synchronisierte Ordner können durch Hinzufügen der Option "Deaktiviert" zu jeder Definition deaktiviert werden:
@@ -67,8 +67,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzI5Mzc0MTksLTEyMzU1ODc1ODIsLT
-Y0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2
-MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLT
-E2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5MjJdfQ==
+eyJoaXN0b3J5IjpbMjAxOTA5NDY5MiwtMTIzNTU4NzU4MiwtNj
+QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
+MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
+Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
 -->
