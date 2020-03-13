@@ -83,12 +83,14 @@ config.vm.provision "shell", inline: <<-SHELL
 SHELL
 end
 ```
-Hier wird eine 
-Packages vom lokalen Server holen
+`config.vm.provision "shell", inline: <<-SHELL`
+Gibt einen Shell-Befehl an, der inline auf dem entfernten Rechner ausgeführt werden soll.
+`sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main `
+Mit diesem Befehl wird das Ubuntu Packages vom lokalen Server holen
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI4NDE3NjAzNywtNzIwMTMwMzUsLTEyMz
+eyJoaXN0b3J5IjpbLTM0NzIyOTg0NSwtNzIwMTMwMzUsLTEyMz
 U1ODc1ODIsLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4
 NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MD
 QyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5
