@@ -85,22 +85,25 @@ end
 ```
 `config.vm.provision "shell", inline: <<-SHELL`
 Gibt einen Shell-Befehl an, der inline auf dem entfernten Rechner ausgeführt werden soll.
+
 `sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main `
 Mit diesem Befehl wird das Ubuntu Image von einem Debian Mirror-Archiv geholt
+
 ` sudo apt-get update`
 Mit diesem Befehl wird eine Aktualisierung aller Packete auf der VM durchgeführt
+
 ` sudo apt-get -y install apache2 `
-Mit diesem Befehl wird das Packet "apache2" a
+Mit diesem Befehl wird das Packet "apache2" auf der Ubuntu VM installiert. Apache2 ist ein Webserver.
 #
 ```
-title: Dokumentation eines Vagrantfiles M300 LB 2
+title: Dokumentation eines Vagrantfiles
 author: Marc De Pra
 date: 13.03.2020
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ1MjAyMzk1NCwtNzIwMTMwMzUsLTEyMz
-U1ODc1ODIsLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4
-NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MD
-QyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5
-MjJdfQ==
+eyJoaXN0b3J5IjpbNDkzMDY3ODQ2LC03MjAxMzAzNSwtMTIzNT
+U4NzU4MiwtNjQwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2
+LDE3NzU1MDYyMjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwND
+I3NTM5NiwtMTY0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTky
+Ml19
 -->
