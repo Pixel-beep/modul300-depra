@@ -76,20 +76,21 @@ Man könnte auch die CPU Kerne festlegen, mit folgender Konfiguration
   `v.cpus = 2`
 #
 ```
-`config.vm.provision "shell", inline: <<-SHELL`
-  `sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
+config.vm.provision "shell", inline: <<-SHELL
+  sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
   sudo apt-get update
   sudo apt-get -y install apache2 
 SHELL
 end
 ```
+Hier wird eine 
 Packages vom lokalen Server holen
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5MDY3MzU1NDYsLTcyMDEzMDM1LC0xMj
-M1NTg3NTgyLC02NDAzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5
-ODYsMTc3NTUwNjIyMCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxND
-A0Mjc1Mzk2LC0xNjQ5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1
-OTIyXX0=
+eyJoaXN0b3J5IjpbMTI4NDE3NjAzNywtNzIwMTMwMzUsLTEyMz
+U1ODc1ODIsLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4
+NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MD
+QyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5
+MjJdfQ==
 -->
