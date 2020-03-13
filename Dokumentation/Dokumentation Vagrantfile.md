@@ -12,8 +12,7 @@ Es ist wichtig zu verstehen, dass innerhalb eines einzigen Konfigurationsabschni
 config.vm.box = "ubuntu/xenial64"
 ```
   
-  Hier wird konfiguriert, welche Box die Maschine angefahren wird.
-  Der Wert sollte hier der Name einer installierten Box oder ein Kurzname einer Box in HashiCorps Vagrant Cloud sein.
+  Hier wird festgelegt, welche VM gebraucht wird um die Box zu starten.  Der Wert sollte hier der Name einer installierten Box oder ein Kurzname einer Box in HashiCorps Vagrant Cloud sein.
 #
 ```
 config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
@@ -76,18 +75,19 @@ Man könnte auch die CPU Kerne festlegen, mit folgender Konfiguration
 
   `v.cpus = 2`
 #
+```
 `config.vm.provision "shell", inline: <<-SHELL`
-  Packages vom lokalen Server holen
   `sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted" /etc/apt/sources.list 
   sudo apt-get update
   sudo apt-get -y install apache2 
 SHELL
-end`
-
+end
+```
+Packages vom lokalen Server holen
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDY0NzUwODIsLTcyMDEzMDM1LC0xMj
+eyJoaXN0b3J5IjpbLTE5MDY3MzU1NDYsLTcyMDEzMDM1LC0xMj
 M1NTg3NTgyLC02NDAzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5
 ODYsMTc3NTUwNjIyMCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxND
 A0Mjc1Mzk2LC0xNjQ5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1
