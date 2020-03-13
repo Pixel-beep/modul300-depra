@@ -23,7 +23,7 @@ Die Option Auto Correct überprüft ob der gesetzte Port mit einem bereits verwe
 
 Synchronisierte Ordner werden innerhalb des Vagrantfiles mit der Methode config.vm.synced_folder konfiguriert. 
 
-Die Verwendung der Konfigurationsanweisung ist folgende:
+Die dazugehörigen Parameter sind folgende:
 Der erste Parameter ist ein Pfad zu einem Verzeichnis auf dem Host-Rechner. 
 Der zweite Parameter muss ein absoluter Pfad sein, der angibt, wo der Ordner auf dem Gastsystem freigegeben werden soll. Dieser Ordner wird (wenn nötig rekursiv) erstellt, wenn er nicht existiert. 
 
@@ -47,9 +47,6 @@ Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner z
 
 *- `id` Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn Sie das Mount auf dem Gastsystem ausführen.*
 
-Synchronisierte Ordner werden automatisch während des Vagabundierens und des Vagabundierens des Neuladens eingerichtet.
-Synchronisierte Ordner können durch Hinzufügen der Option "Deaktiviert" zu jeder Definition deaktiviert werden:
-
   #
 `config.vm.provider "virtualbox" do |vb|
   vb.memory = "512"`
@@ -67,8 +64,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAxOTA5NDY5MiwtMTIzNTU4NzU4MiwtNj
-QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
-MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
-Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
+eyJoaXN0b3J5IjpbOTQ2OTgyNDk1LC0xMjM1NTg3NTgyLC02ND
+AzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5ODYsMTc3NTUwNjIy
+MCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxNDA0Mjc1Mzk2LC0xNj
+Q5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1OTIyXX0=
 -->
