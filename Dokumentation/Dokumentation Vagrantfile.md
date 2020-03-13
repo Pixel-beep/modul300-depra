@@ -92,10 +92,10 @@ Mit diesem Befehl wird das Ubuntu Package vom lokalen Server geholt
 ```
 title: Dokumentation eines Vagrantfiles M300 LB 2
 author: Marc De Pra
-date: 13.0
+date: 13.03.2020
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0NDYwNDcwNywtNzIwMTMwMzUsLTEyMz
+eyJoaXN0b3J5IjpbLTg1ODI3ODQwNiwtNzIwMTMwMzUsLTEyMz
 U1ODc1ODIsLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4
 NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MD
 QyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5
