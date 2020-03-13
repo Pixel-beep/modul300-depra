@@ -33,12 +33,19 @@ Man kann bei der Konfiguration synchronisierter Ordner auch zusätzliche optiona
 Zusätzlich zu diesen Optionen kann der spezifische synchronisierte Ordnertyp weitere Optionen zulassen:
 
 *- create (boolean) - Wenn true, wird der Host-Pfad erstellt, wenn er nicht existiert. Standardeinstellung: falsch.*
+
 *- disabled (boolean) - Wenn true, wird dieser synchronisierte Ordner deaktiviert und nicht eingerichtet. Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner zu deaktivieren oder um eine Definition auf der Grundlage eines externen Faktors bedingt zu deaktivieren.*
+
 *- group (string) - Die Gruppe, der der synchronisierte Ordner gehören wird. Standardmäßig wird dies der SSH-Benutzer sein. Einige synchronisierte Ordnertypen unterstützen die Änderung der Gruppe nicht.*
+
 *- mount_options (array) - Eine Liste zusätzlicher Einhängeoptionen, die an den Einhängebefehl übergeben werden.*
+
 *- owner (string) - Der Benutzer, der der Eigentümer dieses synchronisierten Ordners sein sollte. Standardmäßig wird dies der SSH-Benutzer sein. Einige synchronisierte Ordnertypen unterstützen die Änderung des Eigentümers nicht.*
+
 *- type (string) - Der Typ des synchronisierten Ordners. Wenn dies nicht angegeben wird, wählt Vagrant automatisch die beste synchronisierte Ordneroption für Ihre Umgebung. Andernfalls können Sie einen bestimmten Typ wie "nfs" angeben.*
+
 *- id (string) - Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn Sie das Mount auf dem Gastsystem ausführen.*
+
 Synchronisierte Ordner werden automatisch während des Vagabundierens und des Vagabundierens des Neuladens eingerichtet.
 Synchronisierte Ordner können durch Hinzufügen der Option "Deaktiviert" zu jeder Definition deaktiviert werden:
 
@@ -59,8 +66,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDc1NjI4NzEsLTEyMzU1ODc1ODIsLT
-Y0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2
-MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLT
-E2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5MjJdfQ==
+eyJoaXN0b3J5IjpbNzI0Mjg3MTY3LC0xMjM1NTg3NTgyLC02ND
+AzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5ODYsMTc3NTUwNjIy
+MCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxNDA0Mjc1Mzk2LC0xNj
+Q5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1OTIyXX0=
 -->
