@@ -25,9 +25,11 @@ Synchronisierte Ordner werden innerhalb des Vagrantfiles mit der Methode config.
 
 Die Verwendung der Konfigurationsanweisung ist folgende:
 Der erste Parameter ist ein Pfad zu einem Verzeichnis auf dem Host-Rechner. 
-Der zweite Parameter muss ein absoluter Pfad sein, der angibt, wo der Ordner auf dem Gastsystem freigegeben werden soll. Dieser Ordner wird (wenn nötig rekursiv) erstellt, wenn er nicht existiert. Standardmäßig hängt Vagrant die synchronisierten Ordner mit dem Eigentümer/Gruppe an den SSH-Benutzer und alle übergeordneten Ordner an das Stammverzeichnis an.
+Der zweite Parameter muss ein absoluter Pfad sein, der angibt, wo der Ordner auf dem Gastsystem freigegeben werden soll. Dieser Ordner wird (wenn nötig rekursiv) erstellt, wenn er nicht existiert. 
 
-Sie können bei der Konfiguration synchronisierter Ordner auch zusätzliche optionale Parameter angeben. Diese Optionen sind unten aufgeführt. Ausführlichere Beispiele für die Verwendung einiger dieser Optionen werden im Anschluss an diesen Abschnitt gezeigt. Beachten Sie, dass das Eigentümer/Gruppen-Beispiel zwei zusätzliche, durch Kommata getrennte Optionen enthält.
+Standardmässig hängt Vagrant dann die synchronisierten Ordner mit dem Eigentümer/Gruppe an den SSH-Benutzer und alle übergeordneten Ordner an das Stammverzeichnis an.
+
+Man kann bei der Konfiguration synchronisierter Ordner auch zusätzliche optionale Parameter angeben. Diese Optionen sind unten aufgeführt. 
 Zusätzlich zu diesen Optionen kann der spezifische synchronisierte Ordnertyp weitere Optionen zulassen. Weitere Einzelheiten finden Sie in der Dokumentation für Ihren spezifischen synchronisierten Ordnertyp. Die eingebauten synchronisierten Ordnertypen sind auf anderen Seiten dokumentiert, die in der Navigation für diese Dokumente verfügbar sind.
 - create (boolean) - Wenn true, wird der Host-Pfad erstellt, wenn er nicht existiert. Standardeinstellung: falsch.
 - disabled (boolean) - Wenn true, wird dieser synchronisierte Ordner deaktiviert und nicht eingerichtet. Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner zu deaktivieren oder um eine Definition auf der Grundlage eines externen Faktors bedingt zu deaktivieren.
@@ -56,8 +58,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NzIwNzk1NywtMTIzNTU4NzU4MiwtNj
-QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
-MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
-Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
+eyJoaXN0b3J5IjpbMjcwOTM4MzY3LC0xMjM1NTg3NTgyLC02ND
+AzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5ODYsMTc3NTUwNjIy
+MCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxNDA0Mjc1Mzk2LC0xNj
+Q5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1OTIyXX0=
 -->
