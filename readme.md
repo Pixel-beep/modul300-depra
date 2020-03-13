@@ -3,6 +3,7 @@ Einfacher Webserver mit Ubuntu 16.x.
 Erstellen und Starten der VM
 Git pull um alle erforderlichen Dateien herunterzuladen.
 In das Verzeichnis navigieren und den folgenden Befehl ausführen:
+
 `vagrant up`
 -------------------------------------------
 
