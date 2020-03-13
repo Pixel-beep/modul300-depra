@@ -62,7 +62,8 @@ In unserem Fall ist der festgelegte Anbieter Virtualbox. Mit den Paramterangaben
 #
 
   `vb.memory = "512"`
-end
+
+
 Text
 #
 `config.vm.provision "shell", inline: <<-SHELL`
@@ -76,7 +77,7 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNTU3MjMyNCwtMTIzNTU4NzU4MiwtNj
+eyJoaXN0b3J5IjpbLTIwMjE1NTQ5NywtMTIzNTU4NzU4MiwtNj
 QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
 MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
 Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
