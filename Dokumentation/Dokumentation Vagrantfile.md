@@ -48,7 +48,17 @@ Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner z
 *- `id` Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn man den Mount auf dem Gastsystem ausführt.*
 
   #
-`config.vm.provider "virtualbox" do |vb|
+`config.vm.provider "virtualbox" do |vb|`
+
+Der config.vm.provider Befehl nimmt einen einzigen Parameter: den Namen des zu konfigurierenden Providers. Dann wird ein innerer Block mit benutzerdefinierten Konfigurationsoptionen angezeigt, der zur Konfiguration dieses Providers verwendet werden kann.
+
+Diese innere Konfiguration unterscheidet sich von Anbieter zu Anbieter, daher lesen Sie bitte die Dokumentation für den Anbieter Ihrer Wahl, um die verfügbaren Konfigurationsoptionen zu sehen.
+
+Denken Sie daran, dass einige Anbieter keine anbieterspezifische Konfiguration benötigen und direkt aus der Schachtel heraus funktionieren. Die anbieterspezifische Konfiguration ist als eine Möglichkeit gedacht, mehr Optionen bereitzustellen, um den Anbieter Ihrer Wahl optimal zu nutzen. Sie ist nicht als Hindernis dafür gedacht, gegen einen bestimmten Anbieter anzutreten.
+
+"Vorrangige Konfiguration
+Anbieter können auch nicht-anbieter-spezifische Konfigurationen wie config.vm.box und jede andere Vagrant-Konfiguration außer Kraft setzen. Dies geschieht durch die Angabe eines zweiten Arguments an config.vm.provider. Dieses Argument ist genau wie die normale Konfiguration, d.h. legen Sie beliebige Einstellungen fest, die nur für diesen Anbieter überschrieben werden.
+
   vb.memory = "512"`
 end
 Text
@@ -64,7 +74,7 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMxMzM2OTU1NiwtMTIzNTU4NzU4MiwtNj
+eyJoaXN0b3J5IjpbMTAyNjA0NzcxMywtMTIzNTU4NzU4MiwtNj
 QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
 MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
 Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
