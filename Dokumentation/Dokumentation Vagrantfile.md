@@ -32,7 +32,7 @@ Standardmässig hängt Vagrant dann die synchronisierten Ordner mit dem Eigentü
 Man kann bei der Konfiguration synchronisierter Ordner auch zusätzliche optionale Parameter angeben. Diese Optionen sind unten aufgeführt. 
 Zusätzlich zu diesen Optionen kann der spezifische synchronisierte Ordnertyp weitere Optionen zulassen:
 
-*- create (boolean) - Wenn true, wird der Host-Pfad erstellt, wenn er nicht existiert. Standardeinstellung: falsch.*
+*- `create` Wenn true, wird der Host-Pfad erstellt, wenn er nicht existiert. Standardeinstellung: falsch.*
 
 *- disabled (boolean) - Wenn true, wird dieser synchronisierte Ordner deaktiviert und nicht eingerichtet. Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner zu deaktivieren oder um eine Definition auf der Grundlage eines externen Faktors bedingt zu deaktivieren.*
 
@@ -66,8 +66,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzI0Mjg3MTY3LC0xMjM1NTg3NTgyLC02ND
-AzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5ODYsMTc3NTUwNjIy
-MCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxNDA0Mjc1Mzk2LC0xNj
-Q5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1OTIyXX0=
+eyJoaXN0b3J5IjpbLTEzNjQ0NjU4NDMsLTEyMzU1ODc1ODIsLT
+Y0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2
+MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLT
+E2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5MjJdfQ==
 -->
