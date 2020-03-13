@@ -23,8 +23,9 @@ Die Option Auto Correct überprüft ob der gesetzte Port mit einem bereits verwe
 
 Synchronisierte Ordner werden innerhalb des Vagrantfiles mit der Methode config.vm.synced_folder konfiguriert. 
 
-Die Verwendung der Konfigurationsanweisung ist sehr einfach:
-Der erste Parameter ist ein Pfad zu einem Verzeichnis auf dem Host-Rechner. Wenn der Pfad relativ ist, ist er relativ zur Projekt-Wurzel. Der zweite Parameter muss ein absoluter Pfad sein, der angibt, wo der Ordner auf dem Gastsystem freigegeben werden soll. Dieser Ordner wird (wenn nötig rekursiv) erstellt, wenn er nicht existiert. Standardmäßig hängt Vagrant die synchronisierten Ordner mit dem Eigentümer/Gruppe an den SSH-Benutzer und alle übergeordneten Ordner an das Stammverzeichnis an.
+Die Verwendung der Konfigurationsanweisung ist folgende:
+Der erste Parameter ist ein Pfad zu einem Verzeichnis auf dem Host-Rechner. 
+Der zweite Parameter muss ein absoluter Pfad sein, der angibt, wo der Ordner auf dem Gastsystem freigegeben werden soll. Dieser Ordner wird (wenn nötig rekursiv) erstellt, wenn er nicht existiert. Standardmäßig hängt Vagrant die synchronisierten Ordner mit dem Eigentümer/Gruppe an den SSH-Benutzer und alle übergeordneten Ordner an das Stammverzeichnis an.
 
 Sie können bei der Konfiguration synchronisierter Ordner auch zusätzliche optionale Parameter angeben. Diese Optionen sind unten aufgeführt. Ausführlichere Beispiele für die Verwendung einiger dieser Optionen werden im Anschluss an diesen Abschnitt gezeigt. Beachten Sie, dass das Eigentümer/Gruppen-Beispiel zwei zusätzliche, durch Kommata getrennte Optionen enthält.
 Zusätzlich zu diesen Optionen kann der spezifische synchronisierte Ordnertyp weitere Optionen zulassen. Weitere Einzelheiten finden Sie in der Dokumentation für Ihren spezifischen synchronisierten Ordnertyp. Die eingebauten synchronisierten Ordnertypen sind auf anderen Seiten dokumentiert, die in der Navigation für diese Dokumente verfügbar sind.
@@ -55,8 +56,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDI4ODIzNjAsLTEyMzU1ODc1ODIsLT
-Y0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2
-MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLT
-E2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5MjJdfQ==
+eyJoaXN0b3J5IjpbMTg4NzIwNzk1NywtMTIzNTU4NzU4MiwtNj
+QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
+MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
+Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
 -->
