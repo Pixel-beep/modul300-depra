@@ -50,10 +50,10 @@ Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner z
   #
 `config.vm.provider "virtualbox" do |vb|`
 
-Der config.vm.provider Befehl nimmt einen einzigen Parameter: den Namen des zu konfigurierenden Providers. Dann wird ein innerer Block mit benutzerdefinierten Konfigurationsoptionen angezeigt, der zur Konfiguration dieses Providers verwendet werden kann.
+Der config.vm.provider Befehl ist sehr simpel, es nimmt nur einen einzigen Parameter: den Namen des zu konfigurierenden Providers. Dann wird ein innerer Block mit benutzerdefinierten Konfigurationsoptionen angezeigt, der zur Konfiguration dieses Providers verwendet werden kann.
 
-Diese innere Konfiguration unterscheidet sich von Anbieter zu Anbieter, daher lesen Sie bitte die Dokumentation für den Anbieter Ihrer Wahl, um die verfügbaren Konfigurationsoptionen zu sehen.
-
+Diese innere Konfiguration unterscheidet sich von Anbieter zu Anbieter.
+Einige Anbieter wie zum Beispiel VirtualBox brauchen keine anbieterspezifische Konfiguration sonder funktionieren "out of the box".
 Denken Sie daran, dass einige Anbieter keine anbieterspezifische Konfiguration benötigen und direkt aus der Schachtel heraus funktionieren. Die anbieterspezifische Konfiguration ist als eine Möglichkeit gedacht, mehr Optionen bereitzustellen, um den Anbieter Ihrer Wahl optimal zu nutzen. Sie ist nicht als Hindernis dafür gedacht, gegen einen bestimmten Anbieter anzutreten.
 
 "Vorrangige Konfiguration
@@ -74,8 +74,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAyNjA0NzcxMywtMTIzNTU4NzU4MiwtNj
-QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
-MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
-Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
+eyJoaXN0b3J5IjpbLTEwMjE5NzgzMDcsLTEyMzU1ODc1ODIsLT
+Y0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2
+MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLT
+E2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5MjJdfQ==
 -->
