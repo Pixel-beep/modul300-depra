@@ -1,0 +1,74 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><title>.md</title><style></style></head><body id="preview">
+<h2 class="code-line" data-line-start=0 data-line-end=2 ><a id="Vagrantfile_Dokumentation_0"></a>Vagrantfile Dokumentation</h2>
+<p class="has-line-data" data-line-start="2" data-line-end="3"><code>Vagrant.configure(2) do |config|</code></p>
+<p class="has-line-data" data-line-start="4" data-line-end="6">Die “2” steht für die Version der Objektkonfiguration, die für die Konfiguration dieses Blocks verwendet wird.<br>
+Das Objekt kann aber von Version zu Version sehr unterschiedlich sein.</p>
+<p class="has-line-data" data-line-start="7" data-line-end="9">Derzeit gibt es nur zwei unterstützte Versionen: “1” und “2”. Version 1 repräsentiert die Konfiguration von Vagrant 1.0.x. “2” repräsentiert die Konfiguration für 1.1+ bis 2.0.x.<br>
+Es ist wichtig zu verstehen, dass innerhalb eines einzigen Konfigurationsabschnitts nur eine einzige Version von Vagrant verwendet werden kann.</p>
+<h1 class="code-line" data-line-start=9 data-line-end=10 ><a id="_9"></a></h1>
+<pre><code class="has-line-data" data-line-start="11" data-line-end="13">config.vm.box = &quot;ubuntu/xenial64&quot;
+</code></pre>
+<p class="has-line-data" data-line-start="14" data-line-end="15">Hier wird festgelegt, welche VM gebraucht wird um die Box zu starten.  Der Wert sollte hier der Name einer installierten Box oder ein Kurzname einer Box in HashiCorps Vagrant Cloud sein.</p>
+<h1 class="code-line" data-line-start=15 data-line-end=16 ><a id="_15"></a></h1>
+<pre><code class="has-line-data" data-line-start="17" data-line-end="19">config.vm.network &quot;forwarded_port&quot;, guest:80, host:8080, auto_correct: true
+</code></pre>
+<p class="has-line-data" data-line-start="20" data-line-end="21">Hier wird der Port festgelegt über der die Virtuelle Maschine erreichbar ist. In diesem Fall hier wäre das der Port 8080.</p>
+<p class="has-line-data" data-line-start="22" data-line-end="24">Die Option Auto Correct überprüft ob der gesetzte Port mit einem bereits verwendeten Port kollidiert. Wenn ja, wird der Host-Port automatisch geändert.<br>
+Standardmässig ist diese Option auf “false” gesetzt.</p>
+<h1 class="code-line" data-line-start=24 data-line-end=25 ><a id="_24"></a></h1>
+<pre><code class="has-line-data" data-line-start="26" data-line-end="28">config.vm.synced_folder &quot;.&quot;, &quot;/var/www/html&quot;
+</code></pre>
+<p class="has-line-data" data-line-start="28" data-line-end="29">Synchronisierte Ordner werden innerhalb des Vagrantfiles mit der Methode config.vm.synced_folder konfiguriert.</p>
+<p class="has-line-data" data-line-start="30" data-line-end="33">Die dazugehörigen Parameter sind folgende:<br>
+Der erste Parameter ist ein Pfad zu einem Verzeichnis auf dem Host-Rechner.<br>
+Der zweite Parameter muss ein absoluter Pfad sein, der angibt, wo der Ordner auf dem Gastsystem freigegeben werden soll. Dieser Ordner wird (wenn nötig rekursiv) erstellt, wenn er nicht existiert.</p>
+<p class="has-line-data" data-line-start="34" data-line-end="35">Standardmässig hängt Vagrant dann die synchronisierten Ordner mit dem Eigentümer/Gruppe an den SSH-Benutzer und alle übergeordneten Ordner an das Stammverzeichnis an.</p>
+<p class="has-line-data" data-line-start="36" data-line-end="38">Man kann bei der Konfiguration synchronisierter Ordner auch zusätzliche optionale Parameter angeben. Diese Optionen sind unten aufgeführt.<br>
+Zusätzlich zu diesen Optionen kann der spezifische synchronisierte Ordnertyp weitere Optionen zulassen:</p>
+<p class="has-line-data" data-line-start="39" data-line-end="40"><em>- <code>create</code> Wenn true, wird der Host-Pfad erstellt, wenn er nicht existiert. Standardeinstellung: falsch.</em></p>
+<p class="has-line-data" data-line-start="41" data-line-end="43"><em>- <code>disabled</code> Wenn true, wird dieser synchronisierte Ordner deaktiviert und nicht eingerichtet.<br>
+Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner zu deaktivieren oder um eine Definition auf der Grundlage eines externen Faktors bedingt zu deaktivieren.</em></p>
+<p class="has-line-data" data-line-start="44" data-line-end="45"><em>- <code>group</code>  Die Gruppe, der der synchronisierte Ordner gehören wird. Standardmäßig wird dies der SSH-Benutzer sein. Einige synchronisierte Ordnertypen unterstützen die Änderung der Gruppe nicht.</em></p>
+<p class="has-line-data" data-line-start="46" data-line-end="47"><em>- <code>mount_options</code>  Eine Liste zusätzlicher Einhängeoptionen, die an den Einhängebefehl übergeben werden.</em></p>
+<p class="has-line-data" data-line-start="48" data-line-end="49"><em>- <code>owner</code> Der Benutzer, der der Eigentümer dieses synchronisierten Ordners sein sollte. Standardmäßig wird dies der SSH-Benutzer sein. Einige synchronisierte Ordnertypen unterstützen die Änderung des Eigentümers nicht.</em></p>
+<p class="has-line-data" data-line-start="50" data-line-end="51"><em>- <code>type</code>  Der Typ des synchronisierten Ordners. Wenn dies nicht angegeben wird, wählt Vagrant automatisch die beste synchronisierte Ordneroption für Ihre Umgebung. Andernfalls können Sie einen bestimmten Typ wie “nfs” angeben.</em></p>
+<p class="has-line-data" data-line-start="52" data-line-end="53"><em>- <code>id</code> Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn man den Mount auf dem Gastsystem ausführt.</em></p>
+<h1 class="code-line" data-line-start=54 data-line-end=55 ><a id="_54"></a></h1>
+<pre><code class="has-line-data" data-line-start="56" data-line-end="58">config.vm.provider &quot;virtualbox&quot; do |vb|
+</code></pre>
+<p class="has-line-data" data-line-start="58" data-line-end="59">Der config.vm.provider Befehl ist sehr simpel, es nimmt nur einen einzigen Parameter: den Namen des zu konfigurierenden Providers. Dann wird ein innerer Block mit benutzerdefinierten Konfigurationsoptionen angezeigt, der zur Konfiguration dieses Providers verwendet werden kann.</p>
+<p class="has-line-data" data-line-start="60" data-line-end="63">Diese innere Konfiguration unterscheidet sich von Anbieter zu Anbieter.<br>
+Einige Anbieter wie zum Beispiel VirtualBox brauchen keine anbieterspezifische Konfiguration sonder funktionieren “out of the box”.<br>
+Laut dem offiziellem Wiki Artikel von Vagrant, ist die anbieterspezifische Konfiguration als eine Möglichkeit gedacht, mehr Optionen bereitzustellen, um den Wunsch-Anbieter optimal zu nutzen. Sie ist nicht als Hindernis gedacht, gegen einen bestimmten Anbieter anzutreten.</p>
+<p class="has-line-data" data-line-start="64" data-line-end="67">Vorrangige Konfiguration<br>
+Man kann auch nicht-anbieter-spezifische Konfigurationen wie config.vm.box und jede andere Vagrant-Konfiguration außer Kraft setzen. Dies geschieht durch die Angabe eines zweiten Arguments an config.vm.provider.<br>
+In unserem Fall ist der festgelegte Anbieter Virtualbox. Mit den Paramterangaben “do |vb|” wird alles überschrieben und Virtualbox für dieses Vagrantfile als Anbieter gesetzt.</p>
+<h1 class="code-line" data-line-start=67 data-line-end=68 ><a id="_67"></a></h1>
+<pre><code class="has-line-data" data-line-start="69" data-line-end="71">  vb.memory = &quot;512&quot;
+</code></pre>
+<p class="has-line-data" data-line-start="72" data-line-end="74">Mit dieser Angabe wird der Arbeitsspeicher für die Maschine festgelegt.<br>
+Man könnte auch die CPU Kerne festlegen, mit folgender Konfiguration</p>
+<p class="has-line-data" data-line-start="75" data-line-end="76"><code>v.cpus = 2</code></p>
+<h1 class="code-line" data-line-start=76 data-line-end=77 ><a id="_76"></a></h1>
+<pre><code class="has-line-data" data-line-start="78" data-line-end="85">config.vm.provision &quot;shell&quot;, inline: &lt;&lt;-SHELL
+  sudo sed -i -e&quot;1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main restricted&quot; /etc/apt/sources.list 
+  sudo apt-get update
+  sudo apt-get -y install apache2 
+SHELL
+end
+</code></pre>
+<p class="has-line-data" data-line-start="85" data-line-end="87"><code>config.vm.provision &quot;shell&quot;, inline: &lt;&lt;-SHELL</code><br>
+Gibt einen Shell-Befehl an, der inline auf dem entfernten Rechner ausgeführt werden soll.</p>
+<p class="has-line-data" data-line-start="88" data-line-end="90"><code>sudo sed -i -e&quot;1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main</code><br>
+Mit diesem Befehl wird das Ubuntu Image von einem Debian Mirror-Archiv geholt</p>
+<p class="has-line-data" data-line-start="91" data-line-end="93"><code>sudo apt-get update</code><br>
+Mit diesem Befehl wird eine Aktualisierung aller Packete auf der VM durchgeführt</p>
+<p class="has-line-data" data-line-start="94" data-line-end="96"><code>sudo apt-get -y install apache2</code><br>
+Mit diesem Befehl wird das Packet “apache2” auf der Ubuntu VM installiert. Apache2 ist ein Webserver.</p>
+<h1 class="code-line" data-line-start=96 data-line-end=97 ><a id="_96"></a></h1>
+<pre><code class="has-line-data" data-line-start="98" data-line-end="102">title: Dokumentation eines Vagrantfiles
+author: Marc De Pra
+date: 13.03.2020
+</code></pre>
+
+</body></html>
