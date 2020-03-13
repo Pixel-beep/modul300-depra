@@ -12,7 +12,7 @@ Es ist wichtig zu verstehen, dass innerhalb eines einzigen Konfigurationsabschni
 config.vm.box = "ubuntu/xenial64"
 ```
   
-  Hier wird spezifiziert welche VM Box verwendet werden soll.
+  Hier wird konfiguriert, geg welche Kiste die Maschine angefahren wird. Der Wert sollte hier der Name einer installierten Box oder ein Kurzname einer Box in HashiCorps Vagrant Cloud sein.
 #
 ```
 config.vm.network "forwarded_port", guest:80, host:8080, auto_correct: true
@@ -86,8 +86,9 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcyMDEzMDM1LC0xMjM1NTg3NTgyLC02ND
-AzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5ODYsMTc3NTUwNjIy
-MCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxNDA0Mjc1Mzk2LC0xNj
-Q5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1OTIyXX0=
+eyJoaXN0b3J5IjpbMTc0NzAxMzk3OCwtNzIwMTMwMzUsLTEyMz
+U1ODc1ODIsLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4
+NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MD
+QyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5
+MjJdfQ==
 -->
