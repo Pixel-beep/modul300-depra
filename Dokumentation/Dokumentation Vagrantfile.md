@@ -86,7 +86,7 @@ end
 `config.vm.provision "shell", inline: <<-SHELL`
 Gibt einen Shell-Befehl an, der inline auf dem entfernten Rechner ausgeführt werden soll.
 `sudo sed -i -e"1i deb {{config.server}}/apt-mirror/mirror/archive.ubuntu.com/ubuntu xenial main `
-Mit diesem Befehl wird das Ubuntu Package vom lokalen Server geholt
+Mit diesem Befehl wird dasUbuntu Package von einem Debian Mirror-Archiv geholt
 
 #
 ```
@@ -95,7 +95,7 @@ author: Marc De Pra
 date: 13.03.2020
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg1ODI3ODQwNiwtNzIwMTMwMzUsLTEyMz
+eyJoaXN0b3J5IjpbMTA3ODgzMzE0OCwtNzIwMTMwMzUsLTEyMz
 U1ODc1ODIsLTY0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4
 NiwxNzc1NTA2MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MD
 QyNzUzOTYsLTE2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5
