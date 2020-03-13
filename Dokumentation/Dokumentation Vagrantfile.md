@@ -58,6 +58,7 @@ Laut dem offiziellem Wiki Artikel von Vagrant, ist die anbieterspezifische Konfi
 
 Vorrangige Konfiguration
 Man kann auch nicht-anbieter-spezifische Konfigurationen wie config.vm.box und jede andere Vagrant-Konfiguration außer Kraft setzen. Dies geschieht durch die Angabe eines zweiten Arguments an config.vm.provider. 
+In unserem Fall ist der festgelegte Anbieter Virtualbox. Mit 
 
   vb.memory = "512"`
 end
@@ -74,8 +75,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NDUyOTI1MDIsLTEyMzU1ODc1ODIsLT
-Y0MDM2MTE4NiwtMTA4Mjc0NjYwLDQ1OTU2NDk4NiwxNzc1NTA2
-MjIwLDEyNTA0MzYyOTIsNjg4NjQ5OTQyLDE0MDQyNzUzOTYsLT
-E2NDkxMjkxNjQsLTk5MTYzMzg0LC03NTA3MTU5MjJdfQ==
+eyJoaXN0b3J5IjpbMTIwNjYyNjcxOSwtMTIzNTU4NzU4MiwtNj
+QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
+MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
+Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
 -->
