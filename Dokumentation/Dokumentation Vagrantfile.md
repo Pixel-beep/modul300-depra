@@ -45,7 +45,7 @@ Dies kann verwendet werden, um einen zuvor definierten synchronisierten Ordner z
 
 *- `type`  Der Typ des synchronisierten Ordners. Wenn dies nicht angegeben wird, wählt Vagrant automatisch die beste synchronisierte Ordneroption für Ihre Umgebung. Andernfalls können Sie einen bestimmten Typ wie "nfs" angeben.*
 
-*- `id` Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn Sie das Mount auf dem Gastsystem ausführen.*
+*- `id` Der Name für den Mount-Point dieses synchronisierten Ordners auf dem Gastcomputer. Dieser wird angezeigt, wenn man den Mount auf dem Gastsystem ausführt.*
 
   #
 `config.vm.provider "virtualbox" do |vb|
@@ -64,8 +64,8 @@ end`
 #
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTQ2OTgyNDk1LC0xMjM1NTg3NTgyLC02ND
-AzNjExODYsLTEwODI3NDY2MCw0NTk1NjQ5ODYsMTc3NTUwNjIy
-MCwxMjUwNDM2MjkyLDY4ODY0OTk0MiwxNDA0Mjc1Mzk2LC0xNj
-Q5MTI5MTY0LC05OTE2MzM4NCwtNzUwNzE1OTIyXX0=
+eyJoaXN0b3J5IjpbLTMxMzM2OTU1NiwtMTIzNTU4NzU4MiwtNj
+QwMzYxMTg2LC0xMDgyNzQ2NjAsNDU5NTY0OTg2LDE3NzU1MDYy
+MjAsMTI1MDQzNjI5Miw2ODg2NDk5NDIsMTQwNDI3NTM5NiwtMT
+Y0OTEyOTE2NCwtOTkxNjMzODQsLTc1MDcxNTkyMl19
 -->
